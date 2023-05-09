@@ -8,4 +8,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🚀 Hello You!"
+      - run: echo "🚀 Hello You! Nice seeing you!"
