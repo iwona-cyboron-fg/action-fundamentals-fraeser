@@ -1,11 +1,9 @@
 name: My Test Workflow
 
 on: 
-  workflow_dispatch:
-  push:
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "🚀 Hello You! Nice seeing you!"
+    workflow_dispatch:
+      inputs:
+       environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true
